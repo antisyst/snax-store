@@ -1,0 +1,33 @@
+.category {
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+  border-radius: 12px;
+
+  &:hover &__btn {
+    bottom: 5%;
+    opacity: 1;
+  }
+
+  &__image {
+    width: 100%;
+    display: block;
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: -10%;
+    left: 5%;
+    font-weight: bold;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    transition: all 0.3s linear;
+  }
+}
+
+.category__btn:hover {
+  background: #000;
+  color: #fff;
+}
